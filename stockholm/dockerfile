@@ -1,0 +1,20 @@
+FROM debian
+
+# Instalar paquetes necesarios
+RUN apt-get update && apt-get install -y \
+    sudo \
+    python3\
+    python3-pip
+
+RUN pip install cryptography
+
+# Crear usuario
+RUN useradd -m jusalas- && \
+    echo "jusalas-:password" | chpasswd
+RUN usermod -aG sudo jusalas-
+RUN mkdir /home/jusalas-/infection
+COPY stockholm.py /home/jusalas-/stockholm.py
+COPY infection /home/jusalas-/infection
+# COPY ejemplos-ppt.ppt /home/jusalas-/infection/ejemplos-ppt.ppt
+# COPY nginx.conf /home/jusalas-/infection/nginx.conf
+RUN chown -R jusalas- /home/jusalas-/infection

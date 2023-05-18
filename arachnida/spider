@@ -1,0 +1,138 @@
+#!/goinfre/jusalas-/miniconda3/envs/42AI-jusalas-/bin/python3
+import subprocess
+import os
+from bs4 import BeautifulSoup
+import requests
+import lxml
+import argparse
+from urllib.parse import urlparse
+import errno
+from time import sleep
+
+websites_found = set ()
+img_found = set ()
+downloaded = set()
+visited = set ()
+local_file = False
+website_curl = ''
+
+def arg_parser():
+    analyzer = argparse.ArgumentParser(
+        prog="./spider",
+        description="Home Scraping tool for url images..",
+        epilog="arachnida' exercise of the Cybersecurity Bootcamp of Fundación 42 (Malaga)."
+    )    
+    analyzer.add_argument("URL", help="URL of site. Need 'http://' or 'https://' for web. Need 'file://' for local file", type=str)
+    analyzer.add_argument("-r", help="Indicates that image search and download will be recursive (default L=5).", action="store_true")
+    analyzer.add_argument("-l", help="Depth level for image search and downloading", type=int, default=5)
+    analyzer.add_argument("-p", help="Path to the folder where to download the images, default ./data/", type=str, default="./data/")
+        
+    return analyzer.parse_args()
+
+args = arg_parser()
+url = args.URL
+level = args.l
+path = args.p
+rec = args.r
+
+if url.startswith('file://'):
+    local_file = True
+website_curl = url[0:url.rfind('/')] + '/'
+
+def get_links(url):
+    tmp = set()
+    try:
+        website_domain = urlparse(url)
+        domain = website_domain.netloc
+        if url.startswith('http') or url.startswith('https'):
+            soup = BeautifulSoup(requests.get(url).content, 'lxml')
+        elif url.startswith('file://'):
+            website_parse = urlparse(url)
+            url = website_parse.path
+            with open(url ,'r') as my_file:
+                soup = BeautifulSoup(my_file, 'lxml')            
+        links = soup.find_all('a')        
+        for link in links:
+            lnk = link.get('href')
+            if lnk not in websites_found and urlparse(lnk).netloc == domain and lnk not in visited:        
+                tmp.add(lnk)
+        return tmp
+    except  Exception as SSL:
+        print('some wrong =(')
+
+def ext_check(img):
+    extensions = ['jpg', 'jpeg', 'png', 'gif', 'bmp']
+    for ext in extensions:
+        img = img.lower()
+        if img.endswith(ext):
+            return True
+    return False
+
+def get_img_url(url):
+    try:
+        if url.startswith('http') or url.startswith('https'):
+            website_status = requests.get(url)
+            if website_status.status_code == 200:
+                soup = BeautifulSoup(requests.get(url).content, 'lxml')
+        elif url.startswith('file://'):
+            website_parse = urlparse(url)
+            url = website_parse.path
+            with open(url ,'r') as my_file:
+                soup = BeautifulSoup(my_file, 'lxml')
+        images = soup.find_all('img')        
+        for link in images:
+            img = link.get('src')
+            if img not in img_found and ext_check(img) :     
+                img_found.add(img)
+    except Exception as errno:
+        print("This URL is not up or exist")
+
+def download_folder(path):
+        if not path.endswith("/"):
+            path = path + "/"
+            os.makedirs(path, exist_ok=True)
+            
+        if not os.access(path, os.W_OK) and not path =="./data/":
+            print(f'\033[91m'"\nDont have access to this folder, using the default path './data/\n"'\033[0m')
+            path = "./data/"            
+            sleep(3)        
+        os.makedirs(path, exist_ok=True)
+        os.chdir(path)
+          
+def download_images(imgs,website_curl,local_file):         
+    if local_file == False:
+        print()
+        subprocess.run(["curl",imgs, "-O",])
+        print()
+    elif local_file == True:
+        print()
+        subprocess.run(["curl",website_curl + str(imgs), "-O",])
+        print()
+#=========================================================================================================================
+if __name__ == "__main__":
+     
+     if not url.startswith("http://www.")  and not url.startswith("https://www.")and not url.startswith("file://"):
+        print("You need enter the path with http://www., https://www. or file://")
+        exit()
+
+     else:   
+        download_folder(path)
+        def spider(url,level):        
+            if level == 0:
+                return     
+            
+            websites_found = get_links(url)
+            visited.add(url)      
+                
+            get_img_url(url)
+            
+            for imgs in img_found:
+                print(imgs)
+                if imgs not in downloaded:
+                    download_images(imgs,website_curl,local_file)
+                    downloaded.add(imgs)
+            if rec == True:
+                for website in websites_found:
+                    spider(website, level-1)
+        
+        spider(url,level)

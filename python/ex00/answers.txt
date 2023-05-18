@@ -1,0 +1,10 @@
+Output a list of installed packages and their versions:
+# conda list
+Show the package metada of numpy:
+# conda info numpy
+Remove the package numpy
+# conda remove numpy
+Reinstall the package numpy
+# conda install numpy
+Freeze your python packages and their versions in a requeriments.txt file you have to turn-in
+# pip freeze > requeriments.txt

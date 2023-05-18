@@ -1,0 +1,75 @@
+#!/goinfre/jusalas-/miniconda3/envs/42AI-jusalas-/bin/python3
+import argparse
+import os
+from datetime import datetime
+import subprocess
+from PIL import Image
+from PIL.ExifTags import TAGS, GPSTAGS
+
+
+
+def inicializar_analizador():
+    parser = argparse.ArgumentParser(
+        prog = "./scorpion",
+        description="Home-made tool to display image metadata",
+        epilog="Arachnida's exercise of the Cybersecurity Bootcamp of Fundación 42 (Malaga)."
+    )
+    parser.add_argument("-p", help="To analyze a only file, you must be enter the path. To analyze a folder, must be end with '*'.", nargs="*")
+
+    return parser.parse_args()
+
+
+
+def metadata_img(path):
+    count = 0
+    for p in path:
+        try:
+            print()
+            info2 = Image.open(p)
+        except:
+            print(f"\033[31mError: Can't open path given: {p}. \nCheck usage with -h. \033[39m")
+
+        else:
+            count += 1
+            img_stat= os.stat(p)
+            print(f"\033[32mDocumento encontrado número 0{count}\033[39m")
+            print(f"{'Name':32}: {info2.filename.split('/')[-1]}")           # Solo el nombre, no la ruta
+            print(f"{'Path':32}: {info2.filename}")
+            print(f"{'Dimensions':32}: {info2.size[0]}, {info2.size[1]}")
+            print(f"{'Format':32}: {info2.format}")
+            print(f"{'Format Description':32}: {info2.format_description}")
+            print(f"{'Modo':32}: {info2.mode}")
+            print(f"{'Paleta':32}: {info2.palette}")
+            print(f"{'Size':32}: {img_stat.st_size}")
+            print(f"{'Date created':32}: {datetime.fromtimestamp(img_stat.st_ctime)}")
+            print(f"{'Modification date':32}: {datetime.fromtimestamp(img_stat.st_mtime)}")
+
+            try:
+                exifdata = info2._getexif()
+
+                for tag_id in exifdata:
+                        tag = TAGS.get(tag_id,tag_id)
+                        data = exifdata.get(tag_id)
+
+                        if isinstance(data, bytes):
+                            data = data.decode('UTF8','replace')
+
+                        print(f"{tag:32}: {data}")
+
+            except Exception:
+                print(f"Información Exif no encontrada.")
+
+
+
+if __name__ == "__main__":
+    args = inicializar_analizador()
+
+    if args.p:
+        paths = list()
+        paths += args.p
+        metadata_img(paths)
+        print()
+    else:
+        subprocess.run(["./scorpion", "-h"])
+
+
