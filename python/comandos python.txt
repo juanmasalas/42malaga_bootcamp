@@ -1,4 +1,0 @@
-comandos python
-
-Activat entorno conda
-# conda activate 42AI-$USER
