@@ -1,0 +1,107 @@
+43772 - 2023-05-22 17:34:59,204 - INFO - __________________________ Evento número: 1 ______________________ - root
+43772 - 2023-05-22 17:34:59,205 - INFO - Memoria en uso: 61.38 MB - root
+43772 - 2023-05-22 17:34:59,205 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:34:59,205 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf  - root
+43772 - 2023-05-22 17:34:59,213 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf, el hash ha cambiado de 5f4694df4a312b9d326f3b52e9742e50 a fc3389dc754da917d07eb7822cd7bfd4> - root
+43772 - 2023-05-22 17:34:59,213 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf, la entropia ha cambiado de 3.932528979763104 a 3.9559585327039537> - root
+43772 - 2023-05-22 17:34:59,213 - INFO - __________________________ Evento número: 2 ______________________ - root
+43772 - 2023-05-22 17:34:59,213 - INFO - Memoria en uso: 46.17 MB - root
+43772 - 2023-05-22 17:34:59,213 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:34:59,213 - INFO - Se ha modificado el archivo: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf - root
+43772 - 2023-05-22 17:34:59,219 - INFO - __________________________ Evento número: 3 ______________________ - root
+43772 - 2023-05-22 17:34:59,220 - INFO - Memoria en uso: 47.09 MB - root
+43772 - 2023-05-22 17:34:59,220 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:34:59,220 - INFO - Se ha modificado el archivo: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf - root
+43772 - 2023-05-22 17:35:13,988 - INFO - __________________________ Evento número: 4 ______________________ - root
+43772 - 2023-05-22 17:35:13,988 - INFO - Memoria en uso: 47.18 MB - root
+43772 - 2023-05-22 17:35:13,988 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:35:13,988 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/Jesuslovessiesta.pdf  - root
+43772 - 2023-05-22 17:35:56,543 - INFO - __________________________ Evento número: 5 ______________________ - root
+43772 - 2023-05-22 17:35:56,544 - INFO - Memoria en uso: 47.25 MB - root
+43772 - 2023-05-22 17:35:56,544 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:35:56,544 - INFO - Se ha eliminado el archivo: /Users/jcueto-r/Desktop/2remove/adsff.pdf  - root
+43772 - 2023-05-22 17:35:56,544 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/adsff.pdf, el hash ha cambiado de d9606bb8400afacf81d9b84402cc9da3 a d41d8cd98f00b204e9800998ecf8427e> - root
+43772 - 2023-05-22 17:35:56,544 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/adsff.pdf, la entropia ha cambiado de 2.5032587001877364 a None> - root
+43772 - 2023-05-22 17:35:56,544 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/adsff.pdf, el tipo de archivo ha cambiado de text/plain a None> - root
+43772 - 2023-05-22 17:35:56,544 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/adsff.pdf, la fecha de creacion ha cambiado de 2023-05-22 17:34:40 a None> - root
+43772 - 2023-05-22 17:35:56,544 - WARNING - Posible actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,555 - INFO - __________________________ Evento número: 6 ______________________ - root
+43772 - 2023-05-22 17:35:56,555 - INFO - Memoria en uso: 47.29 MB - root
+43772 - 2023-05-22 17:35:56,555 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:35:56,555 - INFO - Se ha eliminado el archivo: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf  - root
+43772 - 2023-05-22 17:35:56,555 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf, el hash ha cambiado de fc3389dc754da917d07eb7822cd7bfd4 a d41d8cd98f00b204e9800998ecf8427e> - root
+43772 - 2023-05-22 17:35:56,556 - INFO - __________________________ Evento número: 7 ______________________ - root
+43772 - 2023-05-22 17:35:56,556 - INFO - Memoria en uso: 47.28 MB - root
+43772 - 2023-05-22 17:35:56,556 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:35:56,556 - INFO - Se ha eliminado el archivo: /Users/jcueto-r/Desktop/2remove/Jesuslovessiesta.pdf  - root
+43772 - 2023-05-22 17:35:56,565 - INFO - __________________________ Evento número: 8 ______________________ - root
+43772 - 2023-05-22 17:35:56,566 - INFO - Memoria en uso: 47.28 MB - root
+43772 - 2023-05-22 17:35:56,566 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:35:56,566 - INFO - Se ha eliminado el archivo: /Users/jcueto-r/Desktop/2remove/Juanma.pdf  - root
+43772 - 2023-05-22 17:35:56,566 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/Juanma.pdf, la entropia ha cambiado de -0.0 a None> - root
+43772 - 2023-05-22 17:35:56,566 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/Juanma.pdf, el tipo de archivo ha cambiado de inode/x-empty a None> - root
+43772 - 2023-05-22 17:35:56,566 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/Juanma.pdf, la fecha de creacion ha cambiado de 2023-05-22 17:34:40 a None> - root
+43772 - 2023-05-22 17:35:56,566 - WARNING - Posible actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,590 - INFO - __________________________ Evento número: 9 ______________________ - root
+43772 - 2023-05-22 17:35:56,590 - INFO - Memoria en uso: 47.31 MB - root
+43772 - 2023-05-22 17:35:56,590 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:35:56,590 - INFO - Se ha eliminado el archivo: /Users/jcueto-r/Desktop/2remove/sdfasdf.pdf  - root
+43772 - 2023-05-22 17:35:56,590 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/sdfasdf.pdf, el hash ha cambiado de ac203487d5d256b804385d0e84c800e3 a d41d8cd98f00b204e9800998ecf8427e> - root
+43772 - 2023-05-22 17:35:56,590 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/sdfasdf.pdf, la entropia ha cambiado de 2.981076367360913 a None> - root
+43772 - 2023-05-22 17:35:56,590 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/sdfasdf.pdf, el tipo de archivo ha cambiado de text/plain a None> - root
+43772 - 2023-05-22 17:35:56,590 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/sdfasdf.pdf, la fecha de creacion ha cambiado de 2023-05-22 17:34:40 a None> - root
+43772 - 2023-05-22 17:35:56,590 - WARNING - Posible actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,590 - CRITICAL - Se ha detectado el uso intensivo de actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,590 - CRITICAL - Se ha detectado el uso intensivo de actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,590 - CRITICAL - Se ha detectado el uso intensivo de actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,590 - CRITICAL - Se ha detectado el uso intensivo de actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,590 - CRITICAL - Se ha detectado el uso intensivo de actividad criptográfica - root
+43772 - 2023-05-22 17:35:56,641 - INFO - __________________________ Evento número: 10 ______________________ - root
+43772 - 2023-05-22 17:35:56,641 - INFO - Memoria en uso: 47.33 MB - root
+43772 - 2023-05-22 17:35:56,641 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:35:56,641 - INFO - Se ha eliminado el archivo: /Users/jcueto-r/Desktop/2remove/wannacry.pdf  - root
+43772 - 2023-05-22 17:35:56,641 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/wannacry.pdf, el hash ha cambiado de 46e1517a9f66cb84d6b631df694091f8 a d41d8cd98f00b204e9800998ecf8427e> - root
+43772 - 2023-05-22 17:35:56,641 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/wannacry.pdf, la entropia ha cambiado de 7.988882333589601 a None> - root
+43772 - 2023-05-22 17:35:56,641 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/wannacry.pdf, el tipo de archivo ha cambiado de application/pdf a None> - root
+43772 - 2023-05-22 17:35:56,641 - INFO - <Path: /Users/jcueto-r/Desktop/2remove/wannacry.pdf, la fecha de creacion ha cambiado de 2023-05-22 17:34:40 a None> - root
+43772 - 2023-05-22 17:35:56,641 - WARNING - Posible actividad criptográfica - root
+43772 - 2023-05-22 17:36:26,055 - INFO - __________________________ Evento número: 11 ______________________ - root
+43772 - 2023-05-22 17:36:26,055 - INFO - Memoria en uso: 47.35 MB - root
+43772 - 2023-05-22 17:36:26,055 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,056 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/adsff.pdf  - root
+43772 - 2023-05-22 17:36:26,068 - INFO - __________________________ Evento número: 12 ______________________ - root
+43772 - 2023-05-22 17:36:26,068 - INFO - Memoria en uso: 47.40 MB - root
+43772 - 2023-05-22 17:36:26,068 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,068 - INFO - Se ha modificado el archivo: /Users/jcueto-r/Desktop/2remove/adsff.pdf - root
+43772 - 2023-05-22 17:36:26,187 - INFO - __________________________ Evento número: 13 ______________________ - root
+43772 - 2023-05-22 17:36:26,188 - INFO - Memoria en uso: 48.36 MB - root
+43772 - 2023-05-22 17:36:26,188 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,188 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf  - root
+43772 - 2023-05-22 17:36:26,290 - INFO - __________________________ Evento número: 14 ______________________ - root
+43772 - 2023-05-22 17:36:26,290 - INFO - Memoria en uso: 49.26 MB - root
+43772 - 2023-05-22 17:36:26,290 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,290 - INFO - Se ha modificado el archivo: /Users/jcueto-r/Desktop/2remove/gtghtt.pdf - root
+43772 - 2023-05-22 17:36:26,296 - INFO - __________________________ Evento número: 15 ______________________ - root
+43772 - 2023-05-22 17:36:26,296 - INFO - Memoria en uso: 49.26 MB - root
+43772 - 2023-05-22 17:36:26,296 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,296 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/Jesuslovessiesta.pdf  - root
+43772 - 2023-05-22 17:36:26,297 - INFO - __________________________ Evento número: 16 ______________________ - root
+43772 - 2023-05-22 17:36:26,297 - INFO - Memoria en uso: 49.26 MB - root
+43772 - 2023-05-22 17:36:26,297 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,297 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/Juanma.pdf  - root
+43772 - 2023-05-22 17:36:26,297 - INFO - __________________________ Evento número: 17 ______________________ - root
+43772 - 2023-05-22 17:36:26,297 - INFO - Memoria en uso: 49.26 MB - root
+43772 - 2023-05-22 17:36:26,297 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,297 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/sdfasdf.pdf  - root
+43772 - 2023-05-22 17:36:26,303 - INFO - __________________________ Evento número: 18 ______________________ - root
+43772 - 2023-05-22 17:36:26,303 - INFO - Memoria en uso: 49.26 MB - root
+43772 - 2023-05-22 17:36:26,303 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,303 - INFO - Se ha modificado el archivo: /Users/jcueto-r/Desktop/2remove/sdfasdf.pdf - root
+43772 - 2023-05-22 17:36:26,309 - INFO - __________________________ Evento número: 19 ______________________ - root
+43772 - 2023-05-22 17:36:26,309 - INFO - Memoria en uso: 49.26 MB - root
+43772 - 2023-05-22 17:36:26,309 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,309 - INFO - Se ha creado el archivo: /Users/jcueto-r/Desktop/2remove/wannacry.pdf  - root
+43772 - 2023-05-22 17:36:26,323 - INFO - __________________________ Evento número: 20 ______________________ - root
+43772 - 2023-05-22 17:36:26,323 - INFO - Memoria en uso: 65.36 MB - root
+43772 - 2023-05-22 17:36:26,323 - INFO - El uso de disco está al: 51.40 % - root
+43772 - 2023-05-22 17:36:26,323 - INFO - Se ha modificado el archivo: /Users/jcueto-r/Desktop/2remove/wannacry.pdf - root

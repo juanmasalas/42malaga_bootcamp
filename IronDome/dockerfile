@@ -1,0 +1,31 @@
+FROM python:3.7.16
+
+# Instalar paquetes necesarios
+RUN apt-get update && apt-get install -y \
+    sudo 
+    # python3\
+    # python3-pip
+
+RUN pip install daemonize
+RUN pip install watchdog
+RUN pip install psutil
+RUN pip install numpy
+RUN pip install python-magic
+RUN pip install libmagic
+RUN pip install cryptography
+
+# Crear usuario
+RUN useradd -m jusalas- && \
+    echo "jusalas-:password" | chpasswd
+RUN usermod -aG sudo jusalas-
+
+# USER jusalas-
+USER root
+COPY irondome.py /home/jusalas-/irondome.py
+COPY remove.py /home/jusalas-/remove.py
+RUN mkdir /home/jusalas-/prueba
+COPY prueba /home/jusalas-/prueba
+RUN mkdir /var/log/irondome/
+RUN sudo chmod 700 /var/log/irondome/
+RUN sudo chmod 700 /home/jusalas-/irondome.py
+RUN sudo chmod 700 /home/jusalas-/remove.py
